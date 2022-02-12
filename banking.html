@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="shortcut icon" href="bank-flat.png" type="image/x-icon">
+</head>
+<body>
+
+    <div class="container bg-light p-3 shadow-sm">
+        <h1 class="text-center fs-1 fw-bold mt-5 ">Welcome to our React Bank</h1>
+        <div class="row d-flex justify-content-around mt-5">
+            <div class=" col-lg-3 card bg-info ">
+                <div class="card-body">
+                    <h2 class="fs-2 fw-bold text-center text-white">Deposite</h2>
+                    <h1 class="text-center text-white">$<span id="deposite">00</span></h1>
+                 
+                </div>
+            </div>
+            <div class=" col-lg-3 card bg-dark ">
+                <div class="card-body">
+                    <h2 class="fs-2 fw-bold text-center text-white">Withdraw</h2>
+                    <h1 class="text-center text-white">$<span id="withdraw">340</span></h1>
+                 
+                </div>
+            </div>
+            <div class=" col-lg-3 card bg-success ">
+                <div class="card-body">
+                    <h2 class="fs-2 fw-bold text-center text-white">Balance</h2>
+                    <h1 class="text-center text-white">$<span id="balance">1230</span></h1>
+                 
+                </div>
+            </div>          
+        </div>
+        
+        </div>
+
+        <div class="container bg-light my-5 p-3 shadow">
+            <div class="row">
+                <div class="col-lg-6">
+                    <input id="deposite-input" type="number" required class="form-control" placeholder="$ Amount" >
+                    <button id="deposite-btn" class="btn btn-info text-white my-2">Add Money</button>
+                </div>
+                <div class="col-lg-6">
+                    <input id="withdraw-input" type="number" required class="form-control" placeholder="$ Amount" >
+                    <button id="withdraw-btn" class="btn btn-danger text-white my-2">Withdraw</button>
+                </div>
+        </div>
+
+    <script src="mainbanking.js"></script>
+</body>
+</html>
